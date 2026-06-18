@@ -54,6 +54,7 @@ class BiometricAuthManager {
   }
 
   Future<bool> _showPinOverlay(BuildContext context, {String? description}) async {
+
     final result = await Navigator.of(context).push<bool>(
       MaterialPageRoute(
         fullscreenDialog: true,
